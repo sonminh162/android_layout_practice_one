@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_layout);
 
-        imageView = findViewById(R.id.imageView2);
-
-        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+//        imageView = findViewById(R.id.imageView2);
+//
+//        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         //make translucent statusBar on kitkat devices
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true);

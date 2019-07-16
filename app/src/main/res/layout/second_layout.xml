@@ -9,9 +9,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="419dp"
-        android:layout_height="335dp"
-        app:layout_constraintDimensionRatio="w,18:9"
+        android:layout_width="412dp"
+        android:layout_height="374dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="375:331"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,8 +22,8 @@
         android:id="@+id/imageView3"
         android:layout_width="59dp"
         android:layout_height="59dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="342dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar" />
@@ -117,45 +118,45 @@ Marfa organic squid."
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:letterSpacing="0.17"
-        android:textColor="#8f8e94"
-        android:textSize="10sp"
         android:id="@+id/textView9"
         android:layout_width="43dp"
         android:layout_height="33dp"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginBottom="21dp"
+        android:letterSpacing="0.17"
         android:text="14 COMMENTS"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:textColor="#8f8e94"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:drawableEnd="@drawable/ic_vector"
-        android:drawablePadding="-34dp"
-        android:paddingEnd="47dp"
-        android:letterSpacing="0.01"
-        android:fontFamily="sans-serif-medium"
-        android:textSize="12sp"
-        android:textColor="#ffffff"
-        android:background="@drawable/box"
         android:id="@+id/button4"
         android:layout_width="204dp"
         android:layout_height="43.1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/ic_vector"
+        android:drawablePadding="-34dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.01"
+        android:paddingEnd="47dp"
         android:text="READ ARTICLE"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="@+id/textView9" />
 
     <Button
-        android:background="@drawable/ic_dot_3"
         android:id="@+id/button6"
         android:layout_width="24dp"
         android:layout_height="5.3dp"
-        android:layout_marginTop="63dp"
         android:layout_marginEnd="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_dot_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
