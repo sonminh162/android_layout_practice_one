@@ -9,24 +9,27 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="412dp"
-        android:layout_height="374dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:scaleType="fitXY"
         app:layout_constraintDimensionRatio="375:331"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_next" />
+        app:srcCompat="@drawable/background_next"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="342dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/avatar" />
+        app:srcCompat="@drawable/avatar"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <Button
         android:id="@+id/button3"
@@ -48,25 +51,25 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Most Popular"
+        android:text="@string/most_popular"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/button3"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
-        android:textColor="#030303"
-        android:fontFamily="sans-serif-medium"
-        android:letterSpacing="-0.02"
-        android:textSize="18sp"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
-        android:text="Quick Brown Fox Jumps Over"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="-0.02"
+        android:text="@string/quick_brown_fox_jumps_over"
+        android:textColor="#030303"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:fontFamily="sans-serif"
@@ -78,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginTop="7dp"
-        android:text="TRAVELLING"
+        android:text="@string/travelling"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -91,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginTop="7dp"
-        android:text="16 MAY 2016"
+        android:text="@string/_16_may_2016"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -105,12 +108,7 @@
         android:fontFamily="sans-serif"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="8sp"
-        android:text="Synth polaroid bitters chillwave pickled. Vegan
-disrupt tousled, Portland keffiyeh aesthetic food
-truck sriracha cornhole single-origin coffee church
-key roof party. Leggings ethical McSweeney's,
-normcore you probably haven't heard of them
-Marfa organic squid."
+        android:text="@string/contents"
         android:textColor="#8f8e94"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,11 +122,12 @@ Marfa organic squid."
         android:layout_marginStart="22dp"
         android:layout_marginBottom="21dp"
         android:letterSpacing="0.17"
-        android:text="14 COMMENTS"
+        android:text="@string/comments"
         android:textColor="#8f8e94"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
 
     <Button
         android:id="@+id/button4"
@@ -143,12 +142,13 @@ Marfa organic squid."
         android:fontFamily="sans-serif-medium"
         android:letterSpacing="0.01"
         android:paddingEnd="47dp"
-        android:text="READ ARTICLE"
+        android:text="@string/read_article"
         android:textColor="#ffffff"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView9" />
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/button6"
